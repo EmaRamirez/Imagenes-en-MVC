@@ -1,0 +1,46 @@
+@using AddImages.ViewModels;
+@model IEnumerable<GalleryIndexViewModel>
+@{
+
+}
+
+<div>
+    <div class="mb-3">
+        <h2 style="text-align: center;">Galeria de fotos</h2>
+    </div>
+    <div class="mb-3">
+        <form method="get" asp-action="Create">
+            <button type="submit" class="btn btn-warning">Agregar Imagen</button>
+        </form>
+    </div>
+    <table class="table table">
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.First().Id)</td>
+                <td>@Html.DisplayNameFor(x => x.First().Name)</td>
+                <td>@Html.DisplayNameFor(x => x.First().Url)</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        <img src="@item.Url" alt="" width="100px" height="70px">
+                    </td>
+                </tr>
+
+
+            }
+        </tbody>
+    </table>
+
+
+
+</div>

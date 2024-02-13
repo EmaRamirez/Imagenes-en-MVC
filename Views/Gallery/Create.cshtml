@@ -1,0 +1,20 @@
+@model Gallery
+
+<div>
+    <div class="text-center mb-3">
+        <h2>Formulario para Agregar una nueva foto</h2>
+    </div>
+    <div class="mb-3">
+        <form method="post" enctype="multipart/form-data" asp-action="Create" asp-controller="Gallery">
+            <div class="form-group">
+                <input type="file" class="form-control" name="image">
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
