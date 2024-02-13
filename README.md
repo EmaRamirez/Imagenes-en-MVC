@@ -2,7 +2,7 @@
 
 <div align="justify">
   
-<p>Este proyecto fue creado con la intencion de mostrar una forma de como poner insertar una imagen a mi base de datos y poder consultarlo para poder mostrarlo en la vista</p>
+<p>Este proyecto fue creado con la intencion de mostrar una forma de como poder insertar una imagen a una base de datos y poder consultarlo e mostrarlo en la vista</p>
 <p>En esta ocasion usamos como base de datos SqLite </p>
 
 </div>
